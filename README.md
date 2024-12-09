@@ -9,4 +9,5 @@ FILES:
 *  qna_triplets => contains {question, answer, context} triplet generated based on qa_generation.ipynb
 *  finetuning_based_on_qa.ipynb => code used for finetuning base line model using {question, answer, context} triplets
 *  new_try_final.ipynb => complete zenml working code with pipeline
-*  Project report.pdf => report explaining each part 
+*  Project report.pdf => report explaining each part
+*  final_op_sample.mp4 => video output sample generation of answer via gradio
