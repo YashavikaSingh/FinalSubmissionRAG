@@ -1,0 +1,8 @@
+torch
+tensorflow
+transformers
+sentence-transformers
+pymongo
+qdrant-client
+clearml
+flask 
