@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+      - qdrant
+    environment:
+      - CLEARML_API_ACCESS_KEY=your_access_key
+      - CLEARML_API_SECRET_KEY=your_secret_key
+      - CLEARML_API_SERVER=your_clearml_server
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
+  qdrant:
+    image: qdrant/qdrant:v1.2.3
+    ports:
+      - "6333:6333"
+
+  clearml:
+    image: allegroai/clearml:latest
+    ports:
+      - "8080:8080"  # ClearML Web UI
+    environment:
+      - CLEARML_API_ACCESS_KEY=your_access_key
+      - CLEARML_API_SECRET_KEY=your_secret_key
+      - CLEARML_API_SERVER=your_clearml_server
