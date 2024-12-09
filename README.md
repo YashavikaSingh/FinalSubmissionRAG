@@ -1,6 +1,7 @@
 CS-GY-6613 - ARTIFICIAL INTELLIGENCE
-Instructor: Prof . pantelis monogioudis
-Submissio by :
+Instructor: Prof . Pantelis Monogioudis
+Submission by :
+
 Debika Piriya Dharma Lingam ( Net ID: dd3873)
 Yashavika Singh (Net ID: (Net ID: ys6668) 
 
